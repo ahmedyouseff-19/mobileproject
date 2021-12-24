@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../homepage.dart';
-import '../models.dart';
+import '../lec&sec_model/models.dart';
 
 List<Lec> sec=[
   Lec(

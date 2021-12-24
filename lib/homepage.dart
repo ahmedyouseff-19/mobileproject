@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'auth/widgets/my_butten.dart';
-import 'models.dart';
+import 'lec&sec_model/models.dart';
 class Homepage extends StatelessWidget {
   const Homepage({Key? key}) : super(key: key);
 

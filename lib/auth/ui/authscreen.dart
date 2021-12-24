@@ -1,5 +1,5 @@
 import 'package:bfcai_hp/auth/widgets/auth_form.dart';
-import 'package:bfcai_hp/models.dart';
+import 'package:bfcai_hp/lec&sec_model/models.dart';
 import 'package:flutter/material.dart';
 
 enum AuthType { login, register }

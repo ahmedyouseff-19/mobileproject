@@ -2,7 +2,7 @@ import 'package:bfcai_hp/networkdep/sectable.dart';
 import 'package:flutter/material.dart';
 
 import 'lectable.dart';
-import '../models.dart';
+import '../lec&sec_model/models.dart';
 
 class Networktable extends StatelessWidget {
   const Networktable({Key? key}) : super(key: key);
