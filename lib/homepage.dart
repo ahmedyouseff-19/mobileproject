@@ -8,22 +8,50 @@ class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: Column(
+      backgroundColor:myclr,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.white,
+        title: const Center(
+          child: Text(
+            'BFCAI   ',
+          style: TextStyle(
+            fontSize: 30,
+              color: myclr,
+            fontWeight: FontWeight.bold,
+          ),),
+        ),
 
-        children: [
-          Center(
+      ),
+
+      body: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 25),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            const SizedBox(height: 20,),
+            Hero(
+              tag: 'logoAnimation',
+              child: Image.asset(
+                'images/logo.png',
+                height: 300,
+                width: 500,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
               child: OriginalButton(
-                bcolor: myclr,
-                textColor: Colors.white,
+                text: 'Get Started',
+                bcolor: Colors.white,
+                textColor: myclr,
                 onPressed: () {
                   Navigator.of(context).pushNamed('login');
                 },
-                text: 'test',
-
               ),
-          ),
-        ],
+            ),
+            const SizedBox(height: 20,),
+          ],
+        ),
       ),
     );
   }

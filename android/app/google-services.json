@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "542123642169",
+    "project_id": "bfcai-2021",
+    "storage_bucket": "bfcai-2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542123642169:android:ed9595eb1beceda4d9ace8",
+        "android_client_info": {
+          "package_name": "com.example.bfcai_hp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542123642169-8sskc0e4d0flb69r1nl0p9b5jhdqc554.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe0kZ1x3ORTinyDudQfiAxjJuv83ayMbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542123642169-8sskc0e4d0flb69r1nl0p9b5jhdqc554.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
