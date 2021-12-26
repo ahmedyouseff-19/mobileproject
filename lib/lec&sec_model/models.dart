@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// ِCreated by Ahmed Youseff
 class Lec {
   String? lecname;
   String? doctor;

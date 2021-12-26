@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../homepage.dart';
 import '../lec&sec_model/models.dart';
+// ِCreated by Ahmed Youseff
+
 
 List<Lec> lec=[
   Lec(
@@ -81,7 +83,7 @@ class _networksecScreenState extends State<networksecScreen> {
         ],
         title: Center(
           child:
-          Text('Sections Table',style: TextStyle(
+          Text('Lectures Table',style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
             color: Colors.black,
