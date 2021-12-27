@@ -1,5 +1,6 @@
 import 'package:bfcai_hp/networkdep/sectable.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
 import 'lectable.dart';
 import '../lec&sec_model/models.dart';
