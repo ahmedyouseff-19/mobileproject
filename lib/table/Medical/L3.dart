@@ -1,5 +1,15 @@
 import 'package:bfcai_hp/auth/widgets/my_butten.dart';
 import 'package:bfcai_hp/lec&sec_model/models.dart';
+import 'package:bfcai_hp/medical_dep/L3/M3sec1.dart';
+import 'package:bfcai_hp/medical_dep/L3/M3sec2.dart';
+import 'package:bfcai_hp/medical_dep/L3/M3sec3.dart';
+import 'package:bfcai_hp/medical_dep/L3/M3sec4.dart';
+import 'package:bfcai_hp/medical_dep/L3/M3sec5.dart';
+import 'package:bfcai_hp/medical_dep/L3/M3sec6.dart';
+import 'package:bfcai_hp/medical_dep/L3/M3sec7.dart';
+import 'package:bfcai_hp/medical_dep/L3/M3sec8.dart';
+import 'package:bfcai_hp/medical_dep/L3/lecG1.dart';
+import 'package:bfcai_hp/medical_dep/L3/lecG2.dart';
 import 'package:bfcai_hp/networkdep/L1/lec1.dart';
 import 'package:bfcai_hp/networkdep/L1/sec1.dart';
 import 'package:bfcai_hp/networkdep/L3/lectable.dart';
@@ -57,7 +67,7 @@ class _ML3State extends State<ML3> {
                   setState(() {
                     Navigator.push(context,
                       MaterialPageRoute(
-                        builder: (context)=> network1lec(),
+                        builder: (context)=> MlecG1(),
                       ),
                     );
                   });
@@ -75,7 +85,7 @@ class _ML3State extends State<ML3> {
                   setState(() {
                     Navigator.push(context,
                       MaterialPageRoute(
-                        builder: (context)=> network1lec(),
+                        builder: (context)=> MlecG2(),
                       ),
                     );
                   });
@@ -93,7 +103,7 @@ class _ML3State extends State<ML3> {
                   setState(() {
                     Navigator.push(context,
                       MaterialPageRoute(
-                        builder: (context)=> network1lec(),
+                        builder: (context)=> M3sec1(),
                       ),
                     );
                   });
@@ -111,7 +121,7 @@ class _ML3State extends State<ML3> {
                   setState(() {
                     Navigator.push(context,
                       MaterialPageRoute(
-                        builder: (context)=> network1lec(),
+                        builder: (context)=> M3sec2(),
                       ),
                     );
                   });
@@ -129,7 +139,7 @@ class _ML3State extends State<ML3> {
                   setState(() {
                     Navigator.push(context,
                       MaterialPageRoute(
-                        builder: (context)=> network1lec(),
+                        builder: (context)=> M3sec3(),
                       ),
                     );
                   });
@@ -147,7 +157,79 @@ class _ML3State extends State<ML3> {
                   setState(() {
                     Navigator.push(context,
                       MaterialPageRoute(
-                        builder: (context)=> network1sec(),
+                        builder: (context)=> M3sec4(),
+                      ),
+                    );
+                  });
+
+                },
+                textColor: Colors.white,
+                bcolor: Colors.blueGrey,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(25.0),
+              child: OriginalButton(
+                text: 'Sec 5',
+                onPressed: () {
+                  setState(() {
+                    Navigator.push(context,
+                      MaterialPageRoute(
+                        builder: (context)=> M3sec5(),
+                      ),
+                    );
+                  });
+
+                },
+                textColor: Colors.white,
+                bcolor: Colors.blueGrey,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(25.0),
+              child: OriginalButton(
+                text: 'Sec 6',
+                onPressed: () {
+                  setState(() {
+                    Navigator.push(context,
+                      MaterialPageRoute(
+                        builder: (context)=> M3sec6(),
+                      ),
+                    );
+                  });
+
+                },
+                textColor: Colors.white,
+                bcolor: Colors.blueGrey,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(25.0),
+              child: OriginalButton(
+                text: 'Sec 7',
+                onPressed: () {
+                  setState(() {
+                    Navigator.push(context,
+                      MaterialPageRoute(
+                        builder: (context)=> M3sec7(),
+                      ),
+                    );
+                  });
+
+                },
+                textColor: Colors.white,
+                bcolor: Colors.blueGrey,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(25.0),
+              child: OriginalButton(
+                text: 'Sec 8',
+                onPressed: () {
+                  setState(() {
+                    Navigator.push(context,
+                      MaterialPageRoute(
+                        builder: (context)=> M3sec8(),
                       ),
                     );
                   });

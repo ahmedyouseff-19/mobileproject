@@ -4,56 +4,53 @@ import '../../homepage.dart';
 import '../../startpage.dart';
 
 
+// ِCreated by mariam
+
+
 List<Lec> lec=[
   Lec(
-    doctor: 'Dr.Mohamed Taha',
+    doctor: 'Dr: May&Sara',
     date: 'Saturday',
-    lecname: 'OOP',
-    startTime: '11:15',
-    isdone :false,
-
-  ),
-  Lec(
-    doctor: 'Dr.Fady',
-    date: 'Sunday',
-    lecname: 'Web',
-    startTime: '09:00',
+    lecname: 'Einglish',
+    startTime: '12:00',
     isdone :false,
   ),
   Lec(
-    doctor: 'Dr.Fady',
-    date: 'Sunday',
-    lecname: 'Mobile',
-    startTime: '11:15',
-    isdone :false,
-  ),
-  Lec(
-    doctor: 'Dr.Mohamed Fawzy',
+    doctor: 'Dr.Salah',
     date: 'Monday',
-    lecname: 'Signal',
-    startTime: '3:15',
+    lecname: 'Physics',
+    startTime: '12:00',
     isdone :false,
   ),
   Lec(
-    doctor: 'Dr.Karam',
+    doctor: 'Dr.Ahmad AL-sawy',
     date: 'Tuesday',
-    lecname: 'Algorithms',
+    lecname: 'Computer Science',
     startTime: '09:00',
     isdone :false,
-
   ),
   Lec(
-    doctor: 'Dr.Noha',
+    doctor: 'Dr.Ahmad Hagaj',
+    date: 'Tuesday',
+    lecname: 'Math 1',
+    startTime: '11:15',
+    isdone :false,
+  ),
+  Lec(
+    doctor: 'Dr.Ahmad Mostfa',
+    date: 'Tuesday',
+    lecname: 'Math 0',
+    startTime: '01:30',
+    isdone :false,
+  ),
+  Lec(
+    doctor: 'Dr.Tamer',
     date: 'Wednesday',
-    lecname: 'Database',
+    lecname: 'programing 1',
     startTime: '09:00',
     isdone :false,
-
   ),
-
-
 ];
-
 
 
 

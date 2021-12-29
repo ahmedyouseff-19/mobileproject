@@ -1,5 +1,10 @@
 import 'package:bfcai_hp/auth/widgets/my_butten.dart';
 import 'package:bfcai_hp/lec&sec_model/models.dart';
+import 'package:bfcai_hp/medical_dep/L2/M2sec1.dart';
+import 'package:bfcai_hp/medical_dep/L2/M2sec2.dart';
+import 'package:bfcai_hp/medical_dep/L2/M2sec3.dart';
+import 'package:bfcai_hp/medical_dep/L2/M2sec4.dart';
+import 'package:bfcai_hp/medical_dep/L2/m2lec.dart';
 import 'package:bfcai_hp/networkdep/L1/lec1.dart';
 import 'package:bfcai_hp/networkdep/L1/sec1.dart';
 import 'package:bfcai_hp/networkdep/L3/lectable.dart';
@@ -52,12 +57,12 @@ class _ML2State extends State<ML2> {
             Padding(
               padding: const EdgeInsets.all(25.0),
               child: OriginalButton(
-                text: 'lec G1',
+                text: 'lec',
                 onPressed: () {
                   setState(() {
                     Navigator.push(context,
                       MaterialPageRoute(
-                        builder: (context)=> network1lec(),
+                        builder: (context)=> M2lec(),
                       ),
                     );
                   });
@@ -67,24 +72,7 @@ class _ML2State extends State<ML2> {
                 bcolor: Colors.blueGrey,
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(25.0),
-              child: OriginalButton(
-                text: 'lec G2',
-                onPressed: () {
-                  setState(() {
-                    Navigator.push(context,
-                      MaterialPageRoute(
-                        builder: (context)=> network1lec(),
-                      ),
-                    );
-                  });
 
-                },
-                textColor: Colors.white,
-                bcolor: Colors.blueGrey,
-              ),
-            ),
             Padding(
               padding: const EdgeInsets.all(25.0),
               child: OriginalButton(
@@ -93,7 +81,7 @@ class _ML2State extends State<ML2> {
                   setState(() {
                     Navigator.push(context,
                       MaterialPageRoute(
-                        builder: (context)=> network1lec(),
+                        builder: (context)=> M2sec1(),
                       ),
                     );
                   });
@@ -111,7 +99,7 @@ class _ML2State extends State<ML2> {
                   setState(() {
                     Navigator.push(context,
                       MaterialPageRoute(
-                        builder: (context)=> network1lec(),
+                        builder: (context)=> M2sec2(),
                       ),
                     );
                   });
@@ -129,7 +117,7 @@ class _ML2State extends State<ML2> {
                   setState(() {
                     Navigator.push(context,
                       MaterialPageRoute(
-                        builder: (context)=> network1lec(),
+                        builder: (context)=> M2sec3(),
                       ),
                     );
                   });
@@ -147,7 +135,7 @@ class _ML2State extends State<ML2> {
                   setState(() {
                     Navigator.push(context,
                       MaterialPageRoute(
-                        builder: (context)=> network1sec(),
+                        builder: (context)=> M2sec4(),
                       ),
                     );
                   });

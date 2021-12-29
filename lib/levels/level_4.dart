@@ -73,13 +73,7 @@ class _Level4State extends State<Level4> {
             padding: const EdgeInsets.all(30.0),
             child: OriginalButton(
               text: 'General Dep',
-              onPressed: () {
-                setState(() {
-                  Navigator.of(context)
-                      .pushReplacementNamed('Networktable');
-                });
-
-              },
+              onPressed: () {},
               textColor: Colors.white,
               bcolor: Colors.blueGrey,
             ),

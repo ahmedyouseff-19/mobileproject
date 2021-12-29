@@ -1,5 +1,7 @@
 import 'package:bfcai_hp/auth/widgets/my_butten.dart';
 import 'package:bfcai_hp/lec&sec_model/models.dart';
+import 'package:bfcai_hp/medical_dep/L1/mlec1.dart';
+import 'package:bfcai_hp/medical_dep/L1/msec1.dart';
 import 'package:bfcai_hp/networkdep/L1/lec1.dart';
 import 'package:bfcai_hp/networkdep/L1/sec1.dart';
 import 'package:bfcai_hp/networkdep/L3/lectable.dart';
@@ -56,7 +58,7 @@ class _ML1State extends State<ML1> {
                 setState(() {
                   Navigator.push(context,
                     MaterialPageRoute(
-                      builder: (context)=> network1lec(),
+                      builder: (context)=> Mlec1(),
                     ),
                   );
                 });
@@ -74,7 +76,7 @@ class _ML1State extends State<ML1> {
                 setState(() {
                   Navigator.push(context,
                     MaterialPageRoute(
-                      builder: (context)=> network1sec(),
+                      builder: (context)=> Msec1(),
                     ),
                   );
                 });

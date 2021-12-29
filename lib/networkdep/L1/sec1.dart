@@ -1,58 +1,70 @@
+import 'package:bfcai_hp/homepage.dart';
 import 'package:bfcai_hp/lec&sec_model/models.dart';
 import 'package:flutter/material.dart';
 
 import '../../startpage.dart';
 
+// ِCreated by mariam
+
+
 List<Lec> lec=[
   Lec(
-    doctor: 'Dr.Mohamed Taha',
+    doctor: 'Eng.Mostafa',
     date: 'Saturday',
-    lecname: 'Data comunication',
+    lecname: 'Physics p',
+    startTime: '10:30',
+    isdone :false,
+  ),
+  Lec(
+    doctor: 'Eng.Sara',
+    date: 'Sunday',
+    lecname: 'Physics',
+    startTime: '09:45',
+    isdone :false,
+  ),
+  Lec(
+    doctor: 'Eng.Hisham',
+    date: 'Sunday',
+    lecname: 'Computer Science',
     startTime: '11:15',
     isdone :false,
-
   ),
   Lec(
-    doctor: 'Dr.Fady',
+    doctor: 'Eng.Mahmod Sobhe',
     date: 'Sunday',
-    lecname: 'Web',
-    startTime: '09:00',
+    lecname: 'Math 0',
+    startTime: '01:30',
     isdone :false,
   ),
   Lec(
-    doctor: 'Dr.Fady',
-    date: 'Sunday',
-    lecname: 'Mobile',
-    startTime: '11:15',
-    isdone :false,
-  ),
-  Lec(
-    doctor: 'Dr.Mohamed Fawzy',
+    doctor: 'Eng.Mahmod Sobhe',
     date: 'Monday',
-    lecname: 'Signal',
-    startTime: '3:15',
+    lecname: 'Math 1',
+    startTime: '10:30',
     isdone :false,
   ),
   Lec(
-    doctor: 'Dr.Karam',
-    date: 'Tuesday',
-    lecname: 'Algorithms',
-    startTime: '09:00',
+    doctor: 'Eng.Mahmod Sobhe',
+    date: 'Monday',
+    lecname: 'Math 1',
+    startTime: '02:15',
     isdone :false,
-
   ),
   Lec(
-    doctor: 'Dr.Noha',
+    doctor: 'Eng.Monera',
     date: 'Wednesday',
-    lecname: 'Database',
-    startTime: '09:00',
+    lecname: 'Programing 1',
+    startTime: '11:15',
     isdone :false,
-
   ),
-
-
+  Lec(
+    doctor: 'Eng.Mostafa',
+    date: 'Wednesday',
+    lecname: 'Physics',
+    startTime: '01:30',
+    isdone :false,
+  ),
 ];
-
 
 
 
@@ -92,7 +104,7 @@ class _network1secState extends State<network1sec> {
           onPressed: () {
             Navigator.push(context,
               MaterialPageRoute(
-                builder: (context)=> Startpage(),
+                builder: (context)=> HomePage(),
               ),
             );
           },

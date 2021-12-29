@@ -1,5 +1,10 @@
 import 'package:bfcai_hp/auth/widgets/my_butten.dart';
 import 'package:bfcai_hp/lec&sec_model/models.dart';
+import 'package:bfcai_hp/medical_dep/L4/M4sec1.dart';
+import 'package:bfcai_hp/medical_dep/L4/M4sec2.dart';
+import 'package:bfcai_hp/medical_dep/L4/M4sec3.dart';
+import 'package:bfcai_hp/medical_dep/L4/M4sec4.dart';
+import 'package:bfcai_hp/medical_dep/L4/m4lec.dart';
 import 'package:bfcai_hp/networkdep/L1/lec1.dart';
 import 'package:bfcai_hp/networkdep/L1/sec1.dart';
 import 'package:bfcai_hp/networkdep/L3/lectable.dart';
@@ -52,30 +57,12 @@ class _ML4State extends State<ML4> {
             Padding(
               padding: const EdgeInsets.all(25.0),
               child: OriginalButton(
-                text: 'lec G1',
+                text: 'lec ',
                 onPressed: () {
                   setState(() {
                     Navigator.push(context,
                       MaterialPageRoute(
-                        builder: (context)=> network1lec(),
-                      ),
-                    );
-                  });
-
-                },
-                textColor: Colors.white,
-                bcolor: Colors.blueGrey,
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(25.0),
-              child: OriginalButton(
-                text: 'lec G2',
-                onPressed: () {
-                  setState(() {
-                    Navigator.push(context,
-                      MaterialPageRoute(
-                        builder: (context)=> network1lec(),
+                        builder: (context)=> M4lec(),
                       ),
                     );
                   });
@@ -93,7 +80,7 @@ class _ML4State extends State<ML4> {
                   setState(() {
                     Navigator.push(context,
                       MaterialPageRoute(
-                        builder: (context)=> network1lec(),
+                        builder: (context)=> M4sec1(),
                       ),
                     );
                   });
@@ -111,7 +98,7 @@ class _ML4State extends State<ML4> {
                   setState(() {
                     Navigator.push(context,
                       MaterialPageRoute(
-                        builder: (context)=> network1lec(),
+                        builder: (context)=> M4sec2(),
                       ),
                     );
                   });
@@ -129,7 +116,7 @@ class _ML4State extends State<ML4> {
                   setState(() {
                     Navigator.push(context,
                       MaterialPageRoute(
-                        builder: (context)=> network1lec(),
+                        builder: (context)=> M4sec3(),
                       ),
                     );
                   });
@@ -147,7 +134,7 @@ class _ML4State extends State<ML4> {
                   setState(() {
                     Navigator.push(context,
                       MaterialPageRoute(
-                        builder: (context)=> network1sec(),
+                        builder: (context)=> M4sec4(),
                       ),
                     );
                   });

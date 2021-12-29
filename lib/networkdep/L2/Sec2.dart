@@ -3,53 +3,53 @@ import 'package:flutter/material.dart';
 
 import '../../startpage.dart';
 
+// ِCreated by mariam
+
+
 List<Lec> lec=[
   Lec(
-    doctor: 'Dr.Mohamed Taha',
+    doctor: 'Eng.Ebrahem',
     date: 'Saturday',
-    lecname: 'Data comunication',
+    lecname: 'Data Transmission',
     startTime: '11:15',
     isdone :false,
 
   ),
   Lec(
-    doctor: 'Dr.Fady',
-    date: 'Sunday',
-    lecname: 'Web',
-    startTime: '09:00',
+    doctor: 'Eng.Lobna',
+    date: 'Saturday',
+    lecname: 'Linear Algebra',
+    startTime: '01:30',
     isdone :false,
   ),
   Lec(
-    doctor: 'Dr.Fady',
+    doctor: 'Eng.Mostafa',
     date: 'Sunday',
-    lecname: 'Mobile',
+    lecname: 'Logic p',
     startTime: '11:15',
     isdone :false,
   ),
   Lec(
-    doctor: 'Dr.Mohamed Fawzy',
+    doctor: 'Eng.Hisham',
+    date: 'Sunday',
+    lecname: 'Data Structures',
+    startTime: '03:00',
+    isdone :false,
+  ),
+  Lec(
+    doctor: 'Eng.Aia',
     date: 'Monday',
-    lecname: 'Signal',
-    startTime: '3:15',
+    lecname: 'Logic',
+    startTime: '01:30',
     isdone :false,
   ),
   Lec(
-    doctor: 'Dr.Karam',
+    doctor: 'Eng.Sobhi',
     date: 'Tuesday',
-    lecname: 'Algorithms',
+    lecname: 'Statistical Analysis',
     startTime: '09:00',
     isdone :false,
-
   ),
-  Lec(
-    doctor: 'Dr.Noha',
-    date: 'Wednesday',
-    lecname: 'Database',
-    startTime: '09:00',
-    isdone :false,
-
-  ),
-
 
 ];
 

@@ -2,64 +2,63 @@ import 'package:bfcai_hp/lec&sec_model/models.dart';
 import 'package:flutter/material.dart';
 
 import '../../homepage.dart';
+
 // ِCreated by mariam
 
 List<Lec> lec=[
   Lec(
-    doctor: 'Dr.Alee',
-    date: 'Saturday',
-    lecname: 'Data Transmission',
-    startTime: '09:00',
-    isdone :false,
-  ),
-  Lec(
-    doctor: 'Dr. Amaal',
+    doctor: 'Dr: Sara',
     date: 'Sunday',
-    lecname: 'Statistical Analysis',
-    startTime: '12:45',
-    isdone :false,
-  ),
-  Lec(
-    doctor: 'Dr.Ahmad Hasan',
-    date: 'Monday',
-    lecname: 'Data Structures',
-    startTime: '09:00',
-    isdone :false,
-  ),
-  Lec(
-    doctor: 'Dr:Reda&mostafa',
-    date: 'Monday',
-    lecname: 'Linear Algebra',
+    lecname: 'Information System',
     startTime: '11:15',
     isdone :false,
   ),
   Lec(
-    doctor: 'Dr.Fatma',
-    date: 'Tuesday',
-    lecname: 'Logic',
-    startTime: '12:00',
+    doctor: 'Dr: Tarak',
+    date: 'Sunday',
+    lecname: 'Software engineering',
+    startTime: '01:30',
     isdone :false,
   ),
   Lec(
-    doctor: 'Dr.Alee',
-    date: 'Thursday',
-    lecname: 'Technical Writing',
-    startTime: '10:30',
+    doctor: 'Dr.Wafaa',
+    date: 'Monday',
+    lecname: 'Image Processing',
+    startTime: '09:00',
+    isdone :false,
+  ),
+  Lec(
+    doctor: 'Dr.Reda',
+    date: 'Tuesday',
+    lecname: 'differential equations',
+    startTime: '01:30',
+    isdone :false,
+  ),
+  Lec(
+    doctor: 'Dr.Asmaa',
+    date: 'Wednesday',
+    lecname: 'Genetics',
+    startTime: '11:15',
+    isdone :false,
+  ),
+  Lec(
+    doctor: 'Dr.Mhamed abdalftah',
+    date: 'Wednesday',
+    lecname: 'Systems design',
+    startTime: '01:30',
     isdone :false,
   ),
 ];
 
 
-
-
-class network2lec extends StatefulWidget {
-  const network2lec({Key? key}) : super(key: key);
+class MlecG2 extends StatefulWidget {
+  const MlecG2({Key? key}) : super(key: key);
 
   @override
-  _network2lecState createState() => _network2lecState();
+  _MlecG2State createState() => _MlecG2State();
 }
 
-class _network2lecState extends State<network2lec> {
+class _MlecG2State extends State<MlecG2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -76,7 +75,7 @@ class _network2lecState extends State<network2lec> {
         ],
         title: Center(
           child:
-          Text('Lectures Table',style: TextStyle(
+          Text('Section Table',style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
             color: Colors.white,
