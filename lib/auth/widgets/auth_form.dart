@@ -67,7 +67,7 @@ class _AuthFormState extends State<AuthForm> {
 
                       setState(() {
                         Navigator.of(context)
-                            .pushReplacementNamed('Networktable');
+                            .pushReplacementNamed('home');
                       });
                     } catch (err) {
                       setState(() {

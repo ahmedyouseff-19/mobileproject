@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import '../homepage.dart';
+
 import '../lec&sec_model/models.dart';
+import '../startpage.dart';
 // ِCreated by Ahmed Youseff
 
 
@@ -98,7 +99,7 @@ class _networkSecScreenState extends State<networkSecScreen> {
           onPressed: () {
             Navigator.push(context,
               MaterialPageRoute(
-                builder: (context)=> Homepage(),
+                builder: (context)=> Startpage(),
               ),
             );
           },

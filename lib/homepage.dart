@@ -1,60 +1,96 @@
+import 'package:bfcai_hp/lec&sec_model/models.dart';
+import 'package:bfcai_hp/levels/level_2.dart';
+import 'package:bfcai_hp/levels/level_3.dart';
+import 'package:bfcai_hp/levels/level_4.dart';
 import 'package:flutter/material.dart';
 
-import 'auth/widgets/my_butten.dart';
-import 'lec&sec_model/models.dart';
+import 'levels/level_1.dart';
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
 
-// ِCreated by Ahmed Youseff
+  @override
+  _HomePageState createState() => _HomePageState();
+}
 
-class Homepage extends StatelessWidget {
-  const Homepage({Key? key}) : super(key: key);
-
+class _HomePageState extends State<HomePage> {
+  int currentIndex =0;
+  List<Widget> levels =
+  [
+    Level1(),
+    Level2(),
+    Level3(),
+    Level4(),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:myclr,
       appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.white,
-        title: const Center(
-          child: Text(
-            'BFCAI   ',
-          style: TextStyle(
-            fontSize: 30,
-              color: myclr,
-            fontWeight: FontWeight.bold,
-          ),),
+
+        backgroundColor: myclr,
+        title:  Padding(
+          padding: const EdgeInsets.only(left: 70.0),
+          child: Row(
+            children: [
+              Center(
+                child: Image.asset(
+                  'images/logo.png',
+                  height: 50,
+                  width: 70,
+                ),
+              ),
+              Center(child: Text("BFCAI")),
+            ],
+          ),
         ),
 
       ),
+      body: levels[currentIndex],
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: currentIndex,
+        onTap: (index)
+        {
+          setState(() {
+            currentIndex=index;
+          });
 
-      body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 25),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: <Widget>[
-            const SizedBox(height: 20,),
-            Hero(
-              tag: 'logoAnimation',
-              child: Image.asset(
-                'images/logo.png',
-                height: 300,
-                width: 500,
-              ),
+        },
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: myclr,
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.white,
+        elevation: 10,
+        items:
+        [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.looks_one,
+              color: Colors.white,
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: OriginalButton(
-                text: 'Get Started',
-                bcolor: Colors.white,
-                textColor: myclr,
-                onPressed: () {
-                  Navigator.of(context).pushNamed('login');
-                },
+            label: 'level 1',
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.looks_two,
+                color: Colors.white,
               ),
-            ),
-            const SizedBox(height: 20,),
-          ],
-        ),
+            label: 'level 2',
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.looks_3,
+                color: Colors.white,
+              ),
+            label: 'level 3',
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.looks_4,
+                color: Colors.white,
+              ),
+            label: 'level 4',
+          ),
+        ],
+
       ),
     );
   }

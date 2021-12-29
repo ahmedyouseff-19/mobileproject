@@ -1,4 +1,5 @@
 import 'package:bfcai_hp/networkdep/Networktable.dart';
+import 'package:bfcai_hp/startpage.dart';
 import 'package:flutter/material.dart';
 
 import 'package:firebase_auth/firebase_auth.dart';
@@ -6,6 +7,7 @@ import 'package:firebase_core/firebase_core.dart';
 
 
 import 'auth/ui/authscreen.dart';
+
 import 'homepage.dart';
 import 'networkdep/lectable.dart';
 
@@ -50,13 +52,14 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
 
       debugShowCheckedModeBanner: false,
-      home:  const Homepage(),
+      home:  const Startpage(),
 
 
       routes: {
         'login': (context) =>const AuthScreen(authType: AuthType.login),
         'register': (context) => const AuthScreen(authType: AuthType.register),
         'Networktable':(context) =>Networktable(),
+        'home':(context)=>HomePage(),
       },
     );
   }
