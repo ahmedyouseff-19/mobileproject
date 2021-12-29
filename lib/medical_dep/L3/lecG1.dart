@@ -78,7 +78,7 @@ class _MlecG1State extends State<MlecG1> {
         ],
         title: Center(
           child:
-          Text('Section Table',style: TextStyle(
+          Text('Lectures Table',style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
             color: Colors.white,
@@ -162,7 +162,7 @@ class _MlecG1State extends State<MlecG1> {
                 '${sec.lecname}',
                 style: TextStyle(
 
-                  fontSize: 25.0,
+                  fontSize: 20.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),

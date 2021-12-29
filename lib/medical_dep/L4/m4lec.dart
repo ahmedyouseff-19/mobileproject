@@ -73,7 +73,7 @@ class _M4lecState extends State<M4lec> {
         ],
         title: Center(
           child:
-          Text('Section Table',style: TextStyle(
+          Text('Lectures Table',style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
             color: Colors.white,

@@ -86,7 +86,7 @@ class _Mlec1State extends State<Mlec1> {
         ],
         title: Center(
           child:
-          Text('Section Table',style: TextStyle(
+          Text('Lectures Table',style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
             color: Colors.white,
