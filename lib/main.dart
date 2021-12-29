@@ -1,5 +1,11 @@
-import 'package:bfcai_hp/networkdep/Networktable.dart';
 import 'package:bfcai_hp/startpage.dart';
+import 'package:bfcai_hp/table/Medical/L1.dart';
+import 'package:bfcai_hp/table/Medical/L2.dart';
+import 'package:bfcai_hp/table/Medical/L3.dart';
+import 'package:bfcai_hp/table/Medical/L4.dart';
+import 'package:bfcai_hp/table/Network/L1.dart';
+import 'package:bfcai_hp/table/Network/L2.dart';
+import 'package:bfcai_hp/table/Network/L3.dart';
 import 'package:flutter/material.dart';
 
 import 'package:firebase_auth/firebase_auth.dart';
@@ -9,7 +15,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'auth/ui/authscreen.dart';
 
 import 'homepage.dart';
-import 'networkdep/lectable.dart';
+import 'networkdep/L3/lectable.dart';
 
 
 void main() async {
@@ -58,8 +64,14 @@ class MyApp extends StatelessWidget {
       routes: {
         'login': (context) =>const AuthScreen(authType: AuthType.login),
         'register': (context) => const AuthScreen(authType: AuthType.register),
-        'Networktable':(context) =>Networktable(),
         'home':(context)=>HomePage(),
+        'nl3':(context)=>NL3(),
+        'nl2':(context)=>NL2(),
+        'nl1':(context)=>NL1(),
+        'ml1':(context)=>ML1(),
+        'ml2':(context)=>ML2(),
+        'ml3':(context)=>ML3(),
+        'ml4':(context)=>ML4(),
       },
     );
   }

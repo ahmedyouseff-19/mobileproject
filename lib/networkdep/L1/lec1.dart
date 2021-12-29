@@ -1,16 +1,14 @@
+import 'package:bfcai_hp/lec&sec_model/models.dart';
 import 'package:flutter/material.dart';
-
-
-import '../lec&sec_model/models.dart';
-import '../startpage.dart';
-// ِCreated by Ahmed Youseff
+import '../../homepage.dart';
+import '../../startpage.dart';
 
 
 List<Lec> lec=[
   Lec(
     doctor: 'Dr.Mohamed Taha',
     date: 'Saturday',
-    lecname: 'Network',
+    lecname: 'OOP',
     startTime: '11:15',
     isdone :false,
 
@@ -56,20 +54,19 @@ List<Lec> lec=[
 
 ];
 
-class networksecScreen extends StatefulWidget {
 
-  const networksecScreen({Key? key}) : super(key: key);
+
+
+class network1lec extends StatefulWidget {
+  const network1lec({Key? key}) : super(key: key);
 
   @override
-  State<networksecScreen> createState() => _networksecScreenState();
+  _network1lecState createState() => _network1lecState();
 }
 
-class _networksecScreenState extends State<networksecScreen> {
-
-
+class _network1lecState extends State<network1lec> {
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         actions: [
@@ -78,7 +75,7 @@ class _networksecScreenState extends State<networksecScreen> {
             child:
             Icon(
               Icons.table_chart,
-              color: myclr,
+              color: Colors.white,
             ),
           ) ,
         ],
@@ -87,22 +84,22 @@ class _networksecScreenState extends State<networksecScreen> {
           Text('Lectures Table',style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
-            color: Colors.black,
+            color: Colors.white,
           ),),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: myclr,
         elevation: 10,
         leading: IconButton(
           onPressed: () {
             Navigator.push(context,
-                MaterialPageRoute(
-                builder: (context)=> Startpage(),
-                ),
+              MaterialPageRoute(
+                builder: (context)=> HomePage(),
+              ),
             );
           },
           icon: const Icon(
             Icons.arrow_back,
-            color: myclr,
+            color: Colors.white,
           ) ,
 
         ),
@@ -115,8 +112,8 @@ class _networksecScreenState extends State<networksecScreen> {
           itemBuilder: (context, index) => Container(
               padding: EdgeInsetsDirectional.all(0.0),
               decoration: BoxDecoration(
-                  color: myclr,
-                  borderRadius: BorderRadius.circular(15.0),
+                color: myclr,
+                borderRadius: BorderRadius.circular(15.0),
               ),
               child: buildLecItem(lec[index])),
           separatorBuilder: (context, index) => Padding(
@@ -130,7 +127,6 @@ class _networksecScreenState extends State<networksecScreen> {
       ),
     );
   }
-
   Widget buildLecItem(Lec sec) => Padding(
     padding: const EdgeInsets.all(20.0),
     child: Row(
@@ -200,4 +196,3 @@ class _networksecScreenState extends State<networksecScreen> {
     ),
   );
 }
-

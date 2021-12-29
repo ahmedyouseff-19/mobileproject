@@ -22,7 +22,7 @@ class _Level1State extends State<Level1> {
               onPressed: () {
                 setState(() {
                   Navigator.of(context)
-                      .pushReplacementNamed('Networktable');
+                      .pushReplacementNamed('nl1');
                 });
 
               },
@@ -40,7 +40,7 @@ class _Level1State extends State<Level1> {
               onPressed: () {
                 setState(() {
                   Navigator.of(context)
-                      .pushReplacementNamed('Networktable');
+                      .pushReplacementNamed('ml1');
                 });
 
               },

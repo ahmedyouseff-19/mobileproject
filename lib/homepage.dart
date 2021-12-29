@@ -25,6 +25,16 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading:IconButton(
+          color: Colors.white, onPressed: () {
+          setState(() {
+            Navigator.of(context)
+                .pushReplacementNamed('home');
+          });
+        },
+          icon: Icon(Icons.arrow_back,),
+        ),
+
 
         backgroundColor: myclr,
         title:  Padding(
@@ -58,7 +68,8 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: myclr,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.white,
-        elevation: 10,
+        selectedFontSize: 18,
+        elevation: 12,
         items:
         [
           BottomNavigationBarItem(
