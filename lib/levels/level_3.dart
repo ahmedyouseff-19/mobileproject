@@ -59,9 +59,8 @@ class _Level3State extends State<Level3> {
               onPressed: () {
                 setState(() {
                   Navigator.of(context)
-                      .pushReplacementNamed('Networktable');
+                      .pushReplacementNamed('sl3');
                 });
-
               },
               textColor: Colors.white,
               bcolor: Colors.blueGrey,

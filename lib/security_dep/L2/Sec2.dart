@@ -1,79 +1,71 @@
+import 'package:bfcai_hp/lec&sec_model/models.dart';
 import 'package:flutter/material.dart';
 
-import '../../homepage.dart';
-import '../../lec&sec_model/models.dart';
 import '../../startpage.dart';
-// ِCreated by Ahmed Youseff
+
+// ِCreated by mariam
 
 
-List<Lec> sec=[
+List<Lec> lec=[
   Lec(
-    doctor: 'Eng.Ashraf',
+    doctor: 'Eng.Ebrahem',
     date: 'Saturday',
-    lecname: 'Algorithms',
+    lecname: 'Data Transmission',
     startTime: '11:15',
     isdone :false,
 
   ),
   Lec(
-    doctor: 'Eng.Ibrahim',
+    doctor: 'Eng.Lobna',
     date: 'Saturday',
-    lecname: 'Signal',
-    startTime: '03:15',
+    lecname: 'Linear Algebra',
+    startTime: '01:30',
     isdone :false,
-
   ),
   Lec(
     doctor: 'Eng.Mostafa',
     date: 'Sunday',
-    lecname: 'Web',
-    startTime: '3:15',
-    isdone :false,
-
-  ),
-  Lec(
-    doctor: 'Eng.Gamal',
-    date: 'Monday',
-    lecname: 'Mobile',
-    startTime: '2:15',
-    isdone :false,
-
-  ),
-  Lec(
-    doctor: 'Eng.Sheren',
-    date: 'Tuesday',
-    lecname: 'Database',
-    startTime: '01:30',
-    isdone :false,
-
-  ),
-  Lec(
-    doctor: 'Eng.Ahmed Tawfik',
-    date: 'Wednesday',
-    lecname: 'Network',
+    lecname: 'Logic p',
     startTime: '11:15',
     isdone :false,
-
   ),
-
-
+  Lec(
+    doctor: 'Eng.Hisham',
+    date: 'Sunday',
+    lecname: 'Data Structures',
+    startTime: '03:00',
+    isdone :false,
+  ),
+  Lec(
+    doctor: 'Eng.Aia',
+    date: 'Monday',
+    lecname: 'Logic',
+    startTime: '01:30',
+    isdone :false,
+  ),
+  Lec(
+    doctor: 'Eng.Sobhi',
+    date: 'Tuesday',
+    lecname: 'Statistical Analysis',
+    startTime: '09:00',
+    isdone :false,
+  ),
 
 ];
 
-class network3SecScreen extends StatefulWidget {
 
-  const network3SecScreen({Key? key}) : super(key: key);
+
+
+class S2sec1 extends StatefulWidget {
+  const S2sec1({Key? key}) : super(key: key);
 
   @override
-  State<network3SecScreen> createState() => _network3SecScreenState();
+  _S2sec1State createState() => _S2sec1State();
 }
 
-class _network3SecScreenState extends State<network3SecScreen> {
-
-
+class _S2sec1State extends State<S2sec1> {
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         actions: [
@@ -100,7 +92,7 @@ class _network3SecScreenState extends State<network3SecScreen> {
           onPressed: () {
             Navigator.push(context,
               MaterialPageRoute(
-                builder: (context)=> HomePage(),
+                builder: (context)=> Startpage(),
               ),
             );
           },
@@ -122,19 +114,18 @@ class _network3SecScreenState extends State<network3SecScreen> {
                 color: myclr,
                 borderRadius: BorderRadius.circular(15.0),
               ),
-              child: buildLecItem(sec[index])),
+              child: buildLecItem(lec[index])),
           separatorBuilder: (context, index) => Padding(
             padding: const EdgeInsetsDirectional.only(
               start: 50.0,
             ),
             child: SizedBox(height: 10,),
           ),
-          itemCount: sec.length,
+          itemCount: lec.length,
         ),
       ),
     );
   }
-
   Widget buildLecItem(Lec sec) => Padding(
     padding: const EdgeInsets.all(20.0),
     child: Row(

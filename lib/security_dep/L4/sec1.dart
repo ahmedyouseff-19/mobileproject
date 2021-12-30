@@ -1,79 +1,62 @@
+import 'package:bfcai_hp/homepage.dart';
+import 'package:bfcai_hp/lec&sec_model/models.dart';
 import 'package:flutter/material.dart';
 
-import '../../homepage.dart';
-import '../../lec&sec_model/models.dart';
 import '../../startpage.dart';
-// ِCreated by Ahmed Youseff
+
+// ِCreated by mariam
 
 
-List<Lec> sec=[
+List<Lec> lec=[
   Lec(
-    doctor: 'Eng.Ashraf',
+    doctor: 'Eng: Rowida',
     date: 'Saturday',
-    lecname: 'Algorithms',
-    startTime: '11:15',
-    isdone :false,
-
-  ),
-  Lec(
-    doctor: 'Eng.Ibrahim',
-    date: 'Saturday',
-    lecname: 'Signal',
+    lecname: 'network security',
     startTime: '03:15',
     isdone :false,
-
   ),
   Lec(
-    doctor: 'Eng.Mostafa',
-    date: 'Sunday',
-    lecname: 'Web',
-    startTime: '3:15',
+    doctor: 'Eng.Ezz',
+    date: 'Saturday',
+    lecname: 'cyber security',
+    startTime: '12:00',
     isdone :false,
-
+  ),
+  Lec(
+    doctor: 'Eng.Abd EL-Wahab',
+    date: 'Tuesday',
+    lecname: 'Open source ',
+    startTime: '09:00',
+    isdone :false,
+  ),
+  Lec(
+    doctor: 'Eng.Gamal essam',
+    date: 'Tuesday',
+    lecname: 'hide information',
+    startTime: '11:15',
+    isdone :false,
   ),
   Lec(
     doctor: 'Eng.Gamal',
-    date: 'Monday',
-    lecname: 'Mobile',
-    startTime: '2:15',
-    isdone :false,
-
-  ),
-  Lec(
-    doctor: 'Eng.Sheren',
     date: 'Tuesday',
-    lecname: 'Database',
-    startTime: '01:30',
+    lecname: 'Image Processing',
+    startTime: '03:15',
     isdone :false,
-
   ),
-  Lec(
-    doctor: 'Eng.Ahmed Tawfik',
-    date: 'Wednesday',
-    lecname: 'Network',
-    startTime: '11:15',
-    isdone :false,
-
-  ),
-
-
-
 ];
 
-class network3SecScreen extends StatefulWidget {
 
-  const network3SecScreen({Key? key}) : super(key: key);
+
+class S4Sec extends StatefulWidget {
+  const S4Sec({Key? key}) : super(key: key);
 
   @override
-  State<network3SecScreen> createState() => _network3SecScreenState();
+  _S4SecState createState() => _S4SecState();
 }
 
-class _network3SecScreenState extends State<network3SecScreen> {
-
-
+class _S4SecState extends State<S4Sec> {
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         actions: [
@@ -122,19 +105,18 @@ class _network3SecScreenState extends State<network3SecScreen> {
                 color: myclr,
                 borderRadius: BorderRadius.circular(15.0),
               ),
-              child: buildLecItem(sec[index])),
+              child: buildLecItem(lec[index])),
           separatorBuilder: (context, index) => Padding(
             padding: const EdgeInsetsDirectional.only(
               start: 50.0,
             ),
             child: SizedBox(height: 10,),
           ),
-          itemCount: sec.length,
+          itemCount: lec.length,
         ),
       ),
     );
   }
-
   Widget buildLecItem(Lec sec) => Padding(
     padding: const EdgeInsets.all(20.0),
     child: Row(
@@ -173,7 +155,7 @@ class _network3SecScreenState extends State<network3SecScreen> {
                 '${sec.lecname}',
                 style: TextStyle(
 
-                  fontSize: 25.0,
+                  fontSize: 21.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),

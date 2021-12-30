@@ -1,79 +1,83 @@
+import 'package:bfcai_hp/homepage.dart';
+import 'package:bfcai_hp/lec&sec_model/models.dart';
 import 'package:flutter/material.dart';
 
-import '../../homepage.dart';
-import '../../lec&sec_model/models.dart';
 import '../../startpage.dart';
-// ِCreated by Ahmed Youseff
+
+// ِCreated by mariam
 
 
-List<Lec> sec=[
+List<Lec> lec=[
   Lec(
-    doctor: 'Eng.Ashraf',
+    doctor: 'Eng.Mostafa',
     date: 'Saturday',
-    lecname: 'Algorithms',
-    startTime: '11:15',
+    lecname: 'Physics p',
+    startTime: '10:30',
     isdone :false,
-
   ),
   Lec(
-    doctor: 'Eng.Ibrahim',
-    date: 'Saturday',
-    lecname: 'Signal',
-    startTime: '03:15',
+    doctor: 'Eng.Sara',
+    date: 'Sunday',
+    lecname: 'Physics',
+    startTime: '09:45',
     isdone :false,
-
+  ),
+  Lec(
+    doctor: 'Eng.Hisham',
+    date: 'Sunday',
+    lecname: 'Computer Science',
+    startTime: '11:15',
+    isdone :false,
+  ),
+  Lec(
+    doctor: 'Eng.Mahmod Sobhe',
+    date: 'Sunday',
+    lecname: 'Math 0',
+    startTime: '01:30',
+    isdone :false,
+  ),
+  Lec(
+    doctor: 'Eng.Mahmod Sobhe',
+    date: 'Monday',
+    lecname: 'Math 1',
+    startTime: '10:30',
+    isdone :false,
+  ),
+  Lec(
+    doctor: 'Eng.Mahmod Sobhe',
+    date: 'Monday',
+    lecname: 'Math 1',
+    startTime: '02:15',
+    isdone :false,
+  ),
+  Lec(
+    doctor: 'Eng.Monera',
+    date: 'Wednesday',
+    lecname: 'Programing 1',
+    startTime: '11:15',
+    isdone :false,
   ),
   Lec(
     doctor: 'Eng.Mostafa',
-    date: 'Sunday',
-    lecname: 'Web',
-    startTime: '3:15',
-    isdone :false,
-
-  ),
-  Lec(
-    doctor: 'Eng.Gamal',
-    date: 'Monday',
-    lecname: 'Mobile',
-    startTime: '2:15',
-    isdone :false,
-
-  ),
-  Lec(
-    doctor: 'Eng.Sheren',
-    date: 'Tuesday',
-    lecname: 'Database',
+    date: 'Wednesday',
+    lecname: 'Physics',
     startTime: '01:30',
     isdone :false,
-
   ),
-  Lec(
-    doctor: 'Eng.Ahmed Tawfik',
-    date: 'Wednesday',
-    lecname: 'Network',
-    startTime: '11:15',
-    isdone :false,
-
-  ),
-
-
-
 ];
 
-class network3SecScreen extends StatefulWidget {
 
-  const network3SecScreen({Key? key}) : super(key: key);
+
+class S1sec1 extends StatefulWidget {
+  const S1sec1({Key? key}) : super(key: key);
 
   @override
-  State<network3SecScreen> createState() => _network3SecScreenState();
+  _S1sec1State createState() => _S1sec1State();
 }
 
-class _network3SecScreenState extends State<network3SecScreen> {
-
-
+class _S1sec1State extends State<S1sec1> {
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         actions: [
@@ -122,19 +126,18 @@ class _network3SecScreenState extends State<network3SecScreen> {
                 color: myclr,
                 borderRadius: BorderRadius.circular(15.0),
               ),
-              child: buildLecItem(sec[index])),
+              child: buildLecItem(lec[index])),
           separatorBuilder: (context, index) => Padding(
             padding: const EdgeInsetsDirectional.only(
               start: 50.0,
             ),
             child: SizedBox(height: 10,),
           ),
-          itemCount: sec.length,
+          itemCount: lec.length,
         ),
       ),
     );
   }
-
   Widget buildLecItem(Lec sec) => Padding(
     padding: const EdgeInsets.all(20.0),
     child: Row(

@@ -2,15 +2,17 @@ import 'package:bfcai_hp/auth/widgets/my_butten.dart';
 import 'package:bfcai_hp/lec&sec_model/models.dart';
 import 'package:bfcai_hp/networkdep/L3/lectable.dart';
 import 'package:bfcai_hp/networkdep/L3/sectable.dart';
+import 'package:bfcai_hp/security_dep/L3/lectable.dart';
+import 'package:bfcai_hp/security_dep/L3/sectable.dart';
 import 'package:flutter/material.dart';
-class NL3 extends StatefulWidget {
-  const NL3({Key? key}) : super(key: key);
+class SL3 extends StatefulWidget {
+  const SL3({Key? key}) : super(key: key);
 
   @override
-  _NL3State createState() => _NL3State();
+  _SL3State createState() => _SL3State();
 }
 
-class _NL3State extends State<NL3> {
+class _SL3State extends State<SL3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,7 +57,7 @@ class _NL3State extends State<NL3> {
                 setState(() {
                   Navigator.push(context,
                     MaterialPageRoute(
-                      builder: (context)=> network3LecScreen(),
+                      builder: (context)=> S3Lec(),
                     ),
                   );
                 });
@@ -73,7 +75,7 @@ class _NL3State extends State<NL3> {
                 setState(() {
                   Navigator.push(context,
                     MaterialPageRoute(
-                      builder: (context)=> network3SecScreen(),
+                      builder: (context)=> S3Sec(),
                     ),
                   );
                 });

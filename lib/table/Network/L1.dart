@@ -2,7 +2,6 @@ import 'package:bfcai_hp/auth/widgets/my_butten.dart';
 import 'package:bfcai_hp/lec&sec_model/models.dart';
 import 'package:bfcai_hp/networkdep/L1/lec1.dart';
 import 'package:bfcai_hp/networkdep/L1/sec1.dart';
-import 'package:bfcai_hp/networkdep/L3/lectable.dart';
 import 'package:flutter/material.dart';
 class NL1 extends StatefulWidget {
   const NL1({Key? key}) : super(key: key);

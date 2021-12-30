@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../homepage.dart';
 import '../../lec&sec_model/models.dart';
 import '../../startpage.dart';
-// ِCreated by Ahmed Youseff
+
 
 
 List<Lec> sec=[
@@ -18,23 +18,23 @@ List<Lec> sec=[
   Lec(
     doctor: 'Eng.Ibrahim',
     date: 'Saturday',
-    lecname: 'Signal',
+    lecname: 'File',
     startTime: '03:15',
     isdone :false,
 
   ),
   Lec(
-    doctor: 'Eng.Mostafa',
+    doctor: 'Eng.ahmed',
     date: 'Sunday',
-    lecname: 'Web',
+    lecname: 'AI',
     startTime: '3:15',
     isdone :false,
 
   ),
   Lec(
-    doctor: 'Eng.Gamal',
+    doctor: 'Eng.Ashraf',
     date: 'Monday',
-    lecname: 'Mobile',
+    lecname: 'Introduction to digital forinsic',
     startTime: '2:15',
     isdone :false,
 
@@ -60,15 +60,15 @@ List<Lec> sec=[
 
 ];
 
-class network3SecScreen extends StatefulWidget {
+class S3Sec extends StatefulWidget {
 
-  const network3SecScreen({Key? key}) : super(key: key);
+  const S3Sec({Key? key}) : super(key: key);
 
   @override
-  State<network3SecScreen> createState() => _network3SecScreenState();
+  State<S3Sec> createState() => _network3SecScreenState();
 }
 
-class _network3SecScreenState extends State<network3SecScreen> {
+class _network3SecScreenState extends State<S3Sec> {
 
 
   @override
@@ -204,3 +204,4 @@ class _network3SecScreenState extends State<network3SecScreen> {
     ),
   );
 }
+

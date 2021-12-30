@@ -59,9 +59,8 @@ class _Level4State extends State<Level4> {
               onPressed: () {
                 setState(() {
                   Navigator.of(context)
-                      .pushReplacementNamed('Networktable');
+                      .pushReplacementNamed('sl4');
                 });
-
               },
               textColor: Colors.white,
               bcolor: Colors.blueGrey,

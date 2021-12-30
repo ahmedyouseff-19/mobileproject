@@ -6,6 +6,10 @@ import 'package:bfcai_hp/table/Medical/L4.dart';
 import 'package:bfcai_hp/table/Network/L1.dart';
 import 'package:bfcai_hp/table/Network/L2.dart';
 import 'package:bfcai_hp/table/Network/L3.dart';
+import 'package:bfcai_hp/table/Security/L1.dart';
+import 'package:bfcai_hp/table/Security/L2.dart';
+import 'package:bfcai_hp/table/Security/L3.dart';
+import 'package:bfcai_hp/table/Security/L4.dart';
 import 'package:flutter/material.dart';
 
 import 'package:firebase_auth/firebase_auth.dart';
@@ -30,7 +34,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-
       theme:ThemeData(
         inputDecorationTheme:InputDecorationTheme(
           filled: true,
@@ -55,12 +58,8 @@ class MyApp extends StatelessWidget {
         ),
 
       ),
-      title: 'Flutter Demo',
-
       debugShowCheckedModeBanner: false,
       home:  const Startpage(),
-
-
       routes: {
         'login': (context) =>const AuthScreen(authType: AuthType.login),
         'register': (context) => const AuthScreen(authType: AuthType.register),
@@ -72,6 +71,10 @@ class MyApp extends StatelessWidget {
         'ml2':(context)=>ML2(),
         'ml3':(context)=>ML3(),
         'ml4':(context)=>ML4(),
+        'sl1':(context)=>SL1(),
+        'sl2':(context)=>SL2(),
+        'sl3':(context)=>SL3(),
+        'sl4':(context)=>SL4(),
       },
     );
   }

@@ -1,74 +1,70 @@
 import 'package:flutter/material.dart';
 
+
 import '../../homepage.dart';
 import '../../lec&sec_model/models.dart';
 import '../../startpage.dart';
-// ِCreated by Ahmed Youseff
 
 
-List<Lec> sec=[
+List<Lec> lec=[
   Lec(
-    doctor: 'Eng.Ashraf',
+    doctor: 'Dr.Mohamed Taha',
     date: 'Saturday',
-    lecname: 'Algorithms',
-    startTime: '11:15',
-    isdone :false,
-
-  ),
-  Lec(
-    doctor: 'Eng.Ibrahim',
-    date: 'Saturday',
-    lecname: 'Signal',
-    startTime: '03:15',
-    isdone :false,
-
-  ),
-  Lec(
-    doctor: 'Eng.Mostafa',
-    date: 'Sunday',
-    lecname: 'Web',
-    startTime: '3:15',
-    isdone :false,
-
-  ),
-  Lec(
-    doctor: 'Eng.Gamal',
-    date: 'Monday',
-    lecname: 'Mobile',
-    startTime: '2:15',
-    isdone :false,
-
-  ),
-  Lec(
-    doctor: 'Eng.Sheren',
-    date: 'Tuesday',
-    lecname: 'Database',
-    startTime: '01:30',
-    isdone :false,
-
-  ),
-  Lec(
-    doctor: 'Eng.Ahmed Tawfik',
-    date: 'Wednesday',
     lecname: 'Network',
     startTime: '11:15',
     isdone :false,
 
   ),
+  Lec(
+    doctor: 'Dr.Mona',
+    date: 'Sunday',
+    lecname: 'File',
+    startTime: '09:00',
+    isdone :false,
+  ),
+  Lec(
+    doctor: 'Dr.ibrahem',
+    date: 'Sunday',
+    lecname: 'AI',
+    startTime: '11:15',
+    isdone :false,
+  ),
+  Lec(
+    doctor: 'Dr.Ahmed Taha',
+    date: 'Monday',
+    lecname: 'Introduction to digital forinsic',
+    startTime: '09:00',
+    isdone :false,
+  ),
+  Lec(
+    doctor: 'Dr.Karam',
+    date: 'Tuesday',
+    lecname: 'Algorithms',
+    startTime: '09:00',
+    isdone :false,
 
+  ),
+  Lec(
+    doctor: 'Dr.Noha',
+    date: 'Wednesday',
+    lecname: 'Database',
+    startTime: '09:00',
+    isdone :false,
+
+  ),
 
 
 ];
 
-class network3SecScreen extends StatefulWidget {
+class S3Lec extends StatefulWidget {
 
-  const network3SecScreen({Key? key}) : super(key: key);
+  const S3Lec({Key? key}) : super(key: key);
 
   @override
-  State<network3SecScreen> createState() => _network3SecScreenState();
+  State<S3Lec> createState() => _S3LecState();
 }
 
-class _network3SecScreenState extends State<network3SecScreen> {
+class _S3LecState extends State<S3Lec> {
 
 
   @override
@@ -88,7 +84,7 @@ class _network3SecScreenState extends State<network3SecScreen> {
         ],
         title: Center(
           child:
-          Text('Section Table',style: TextStyle(
+          Text('Lectures Table',style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
             color: Colors.white,
@@ -119,17 +115,17 @@ class _network3SecScreenState extends State<network3SecScreen> {
           itemBuilder: (context, index) => Container(
               padding: EdgeInsetsDirectional.all(0.0),
               decoration: BoxDecoration(
-                color: myclr,
-                borderRadius: BorderRadius.circular(15.0),
+                  color: myclr,
+                  borderRadius: BorderRadius.circular(15.0),
               ),
-              child: buildLecItem(sec[index])),
+              child: buildLecItem(lec[index])),
           separatorBuilder: (context, index) => Padding(
             padding: const EdgeInsetsDirectional.only(
               start: 50.0,
             ),
             child: SizedBox(height: 10,),
           ),
-          itemCount: sec.length,
+          itemCount: lec.length,
         ),
       ),
     );
@@ -204,3 +200,4 @@ class _network3SecScreenState extends State<network3SecScreen> {
     ),
   );
 }
+
