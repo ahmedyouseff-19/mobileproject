@@ -32,8 +32,17 @@ class _AuthFormState extends State<AuthForm> {
             ),
             TextFormField(
               onChanged: (value) => _email = value,
-              validator: (value) =>
-                  value!.isEmpty ? 'You Must Enter A Valid Email ' : null,
+              validator: (value)  {
+                if(value!.isEmpty){
+                  return 'You Must Enter A Valid Email ';
+                }
+                else if(value.length<=13 || (!value.endsWith('fci.bu.edu.eg'))){
+                  return 'Enter valid Email';
+                }
+                else
+                  return null ;
+              },
+
               decoration: const InputDecoration(
                 labelText: 'Enter your Email',
                 hintText: 'text@fci.bu.edu.eg',
