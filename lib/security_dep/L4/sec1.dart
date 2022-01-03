@@ -1,4 +1,4 @@
-import 'package:bfcai_hp/homepage.dart';
+import 'package:bfcai_hp/tablepage.dart';
 import 'package:bfcai_hp/lec&sec_model/models.dart';
 import 'package:flutter/material.dart';
 
@@ -83,7 +83,7 @@ class _S4SecState extends State<S4Sec> {
           onPressed: () {
             Navigator.push(context,
               MaterialPageRoute(
-                builder: (context)=> HomePage(),
+                builder: (context)=> TablePage(),
               ),
             );
           },

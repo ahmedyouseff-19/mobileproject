@@ -1,7 +1,7 @@
 import 'package:bfcai_hp/lec&sec_model/models.dart';
 import 'package:flutter/material.dart';
 
-import '../../homepage.dart';
+import '../../tablepage.dart';
 // ِCreated by mariam
 
 List<Lec> lec=[
@@ -88,7 +88,7 @@ class _S2lecState extends State<S2lec> {
           onPressed: () {
             Navigator.push(context,
               MaterialPageRoute(
-                builder: (context)=> HomePage(),
+                builder: (context)=> TablePage(),
               ),
             );
           },

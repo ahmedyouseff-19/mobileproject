@@ -1,6 +1,6 @@
 import 'package:bfcai_hp/lec&sec_model/models.dart';
 import 'package:flutter/material.dart';
-import '../../homepage.dart';
+import '../../tablepage.dart';
 import '../../startpage.dart';
 
 
@@ -90,7 +90,7 @@ class _S1lecState extends State<S1lec> {
           onPressed: () {
             Navigator.push(context,
               MaterialPageRoute(
-                builder: (context)=> HomePage(),
+                builder: (context)=> TablePage(),
               ),
             );
           },

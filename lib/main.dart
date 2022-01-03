@@ -19,6 +19,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'auth/ui/authscreen.dart';
 
 import 'homepage.dart';
+import 'tablepage.dart';
 import 'networkdep/L3/lectable.dart';
 
 // ِCreated by Ahmed Youseff
@@ -63,7 +64,8 @@ class MyApp extends StatelessWidget {
       routes: {
         'login': (context) =>const AuthScreen(authType: AuthType.login),
         'register': (context) => const AuthScreen(authType: AuthType.register),
-        'home':(context)=>HomePage(),
+        'table':(context)=>TablePage(),
+        'home':(context)=> HomePage(),
         'nl3':(context)=>NL3(),
         'nl2':(context)=>NL2(),
         'nl1':(context)=>NL1(),

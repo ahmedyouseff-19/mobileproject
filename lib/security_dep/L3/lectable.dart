@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 
-import '../../homepage.dart';
+import '../../tablepage.dart';
 import '../../lec&sec_model/models.dart';
 import '../../startpage.dart';
 
@@ -96,7 +96,7 @@ class _S3LecState extends State<S3Lec> {
           onPressed: () {
             Navigator.push(context,
               MaterialPageRoute(
-                builder: (context)=> HomePage(),
+                builder: (context)=> TablePage(),
               ),
             );
           },

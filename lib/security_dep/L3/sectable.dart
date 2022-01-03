@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../homepage.dart';
+import '../../tablepage.dart';
 import '../../lec&sec_model/models.dart';
 import '../../startpage.dart';
 
@@ -100,7 +100,7 @@ class _network3SecScreenState extends State<S3Sec> {
           onPressed: () {
             Navigator.push(context,
               MaterialPageRoute(
-                builder: (context)=> HomePage(),
+                builder: (context)=> TablePage(),
               ),
             );
           },

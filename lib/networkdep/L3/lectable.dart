@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 
-import '../../homepage.dart';
+import '../../tablepage.dart';
 import '../../lec&sec_model/models.dart';
 import '../../startpage.dart';
 // ِCreated by Ahmed Youseff
@@ -97,7 +97,7 @@ class _network3LecScreenState extends State<network3LecScreen> {
           onPressed: () {
             Navigator.push(context,
               MaterialPageRoute(
-                builder: (context)=> HomePage(),
+                builder: (context)=> TablePage(),
               ),
             );
           },

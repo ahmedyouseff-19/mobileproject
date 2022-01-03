@@ -1,4 +1,4 @@
-import 'package:bfcai_hp/homepage.dart';
+import 'package:bfcai_hp/tablepage.dart';
 import 'package:bfcai_hp/lec&sec_model/models.dart';
 import 'package:flutter/material.dart';
 
@@ -95,7 +95,7 @@ class _M2sec3State extends State<M2sec3> {
           onPressed: () {
             Navigator.push(context,
               MaterialPageRoute(
-                builder: (context)=> HomePage(),
+                builder: (context)=> TablePage(),
               ),
             );
           },

@@ -1,13 +1,8 @@
-import 'package:bfcai_hp/lec&sec_model/models.dart';
-import 'package:bfcai_hp/levels/level_2.dart';
-import 'package:bfcai_hp/levels/level_3.dart';
-import 'package:bfcai_hp/levels/level_4.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-import 'levels/level_1.dart';
+import 'lec&sec_model/models.dart';
 
-// ِCreated by Ahmed Youseff
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -16,34 +11,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int currentIndex = 0;
-  List<Widget> levels = [
-    Level1(),
-    Level2(),
-    Level3(),
-    Level4(),
-  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [
-          TextButton(
-              onPressed: () async {
-                await FirebaseAuth.instance.signOut();
-
-                setState(() {
-                  Navigator.of(context).pushReplacementNamed('login');
-                });
-              },
-              child: Text('LogOut',
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-              ),
-              ))
-        ],
         leading: IconButton(
           color: Colors.white,
           onPressed: () {
@@ -72,51 +43,114 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
-      body: levels[currentIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: currentIndex,
-        onTap: (index) {
-          setState(() {
-            currentIndex = index;
-          });
-        },
-        type: BottomNavigationBarType.fixed,
-        backgroundColor: myclr,
-        selectedItemColor: Colors.white,
-        unselectedItemColor: Colors.white,
-        selectedFontSize: 18,
-        elevation: 12,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.looks_one,
-              color: Colors.white,
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 200.0 ,left: 20.0,right: 20.0),
+            child: Row(
+              children: [
+                const SizedBox(
+                  width: 20.0,
+                ),
+                Expanded(
+                  child: GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        Navigator.of(context)
+                            .pushReplacementNamed('table');
+
+                      });
+                    },
+                    child: Container(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.table_view,
+                            size: 30,
+                          color: Colors.white,),
+                          SizedBox(
+                            height: 15.0,
+                          ),
+                          Text(
+                            ' Table',
+                            style: TextStyle(
+                              color: Colors.white,
+                            fontSize: 25.0,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
+                      ),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(
+                          10.0,
+                        ),
+                        color: myclr,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
-            label: 'level 1',
           ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.looks_two,
-              color: Colors.white,
+
+
+          Padding(
+            padding: const EdgeInsets.only(top: 90.0 ,left: 20.0,right: 20.0),
+            child: Row(
+              children: [
+                const SizedBox(
+                  width: 20.0,
+                ),
+                Expanded(
+                  child: GestureDetector(
+                    onTap: ()  async {
+                      await FirebaseAuth.instance.signOut();
+
+                      setState(() {
+                        Navigator.of(context).pushReplacementNamed('login');
+                      });
+                    },
+                    child: Container(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.exit_to_app,
+                            size: 30,
+                            color: Colors.white,),
+                          SizedBox(
+                            height: 15.0,
+                          ),
+                          Text(
+                            'LOG OUT',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 25.0,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
+                      ),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(
+                          10.0,
+                        ),
+                        color: myclr,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
-            label: 'level 2',
           ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.looks_3,
-              color: Colors.white,
-            ),
-            label: 'level 3',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.looks_4,
-              color: Colors.white,
-            ),
-            label: 'level 4',
-          ),
+
+
+
         ],
+
       ),
+
+
     );
   }
 }
